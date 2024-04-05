@@ -92,3 +92,7 @@ button:hover {
 .left-img {
   margin-left: 8%;
 }
+
+#comp-chart img {
+  height: 450px;
+}

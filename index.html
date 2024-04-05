@@ -37,20 +37,20 @@
     <div>
       <h2 id="overview">Overview</h2>
       <p>
-        In this assignment, I used React to build an interactive music-related
-        interface with filter, sort and aggregation capabilities. In addition, I
-        practiced conducting a competitive analysis that compares websites with
-        different favoriting features, thus forming the foundation for my own
-        implementation.
+        In this assignment, I conducted a competitive analysis comparing
+        websites with different favoriting functionality, which formed the
+        foundation of my own implementaiton of an aggregator. I used React to
+        build an interactive music interface with filter, sort and aggregation
+        capabilities.
       </p>
     </div>
     <div>
       <h2 id="competitive-analysis">Competitive Analysis</h2>
       <p>
-        The competitive analysis examines the favoritng function of Pinterest,
-        the New York Times and Spotify. The red boxes highlight how one can
-        favorite and unfavorite an element as well as how the favorites are
-        displayed for each website.
+        The competitive analysis examines favoriting functionality in Pinterest,
+        the New York Times and Spotify. These websites are linked below, and the
+        red annotations highlight how one can favorite and unfavorite an element
+        as well as how the favorites are displayed for each website.
       </p>
       <div id="pinterest">
         <h3>Pinterest (Favorite Pins)</h3>
@@ -66,7 +66,7 @@
         />
       </div>
       <div id="nyt">
-        <h3>New York Times (Favorite Articles)</h3>
+        <h3>New York Times (Save Stories)</h3>
         <p>
           Access the New York Times <a href="https://www.nytimes.com/">here</a>!
         </p>
@@ -81,7 +81,7 @@
         />
       </div>
       <div id="spotify">
-        <h3>Spotify (Favorite Songs)</h3>
+        <h3>Spotify (Like Songs)</h3>
         <p>Access Spotify <a href="https://open.spotify.com/">here</a>!</p>
         <img
           alt="Favoriting on Spotify"
@@ -93,25 +93,53 @@
           src="./assets/spotify-fav-display.png"
         />
       </div>
-      <div>
+      <div id="comp-chart">
         <h3>Competitive Comparison Chart</h3>
+        <img
+          class="left-img"
+          alt="Competitive analysis chart"
+          src="./assets/competitive-analysis.png"
+        />
         <p>
-          In summary, doing this competitive analysis was useful to understand
-          what features were most and least successful.
+          Using a bookmark or heart icon to add items to favorites proved highly
+          effective because this metaphor made the icon's purpose easily
+          understandable to users. In addition showing outlined or filled-in
+          icons based on whether the item was in the favorites list was
+          successful becuase it indicated clickability and visually conveyed
+          favoriting status to users. Having the word "favorite" appear upon
+          hover, as seen in Pinterest, was also beneficial from an accessibility
+          standpoint as it provided two ways to communicate the button's purpose
+          (visual and textual). Furthermore, ensuring the icon was always
+          visible to indicate liked items, as done in Spotify, made the website
+          glanceable. On the other hand, Pinterest and the New York Times
+          websites were more time-consuming to use because users had to click
+          into each item to determine its favoriting status when not viewing the
+          aggregated list. Another unsuccessful aspect was Pinterest using
+          favorites as a filter instead of having a separate location for the
+          aggregator. This approach made it challenging to find favorites
+          because it was more intuitive to expect them to be aggregated across
+          the entire website.
         </p>
       </div>
       <div>
         <h3>Takeaways</h3>
         <p>
           Drawing inspiration from my competitive analysis, the features that I
-          attempted to implement included:
+          will attempt to implement include:
         </p>
         <ul>
-          <li>Button for every element to add and remove from aggregated</li>
-          <li>Button filled in when element in aggregator</li>
           <li>
-            Songs in aggregator based on when they were liked (most recently
-            liked first)
+            An icon next to every element that adds the element to the favorites
+            list when clicked and removes the element from the favorites list
+            when clicked again
+          </li>
+          <li>
+            Icon visually filled in when the element is in the favorites list
+            and outlined when the element is not in the favorites list
+          </li>
+          <li>
+            Order of songs in aggregator based on when they were liked, with the
+            most recently liked songs at the top
           </li>
         </ul>
       </div>
@@ -119,10 +147,12 @@
     <div>
       <h2 id="implementation">Implementation</h2>
       <p>
-        My app allows users to explore global top songs through filtering by
-        song length and genre as well as sorting by release date. Users can like
-        songs, which will aggregate in the Liked Songs section of the interface,
-        which also displays a total of how many songs are liked.
+        The theme of my app is music, and it allows users to explore global top
+        songs. Users can filter songs by length (minutes) and genre, and sort
+        them by release date. Additionally, users can like songs by clicking the
+        heart icon. Liked songs are displayed in the Liked Songs section of the
+        interface, and the total count of liked songs is also updated
+        accordingly.
       </p>
       <img
         alt="React music aggregator app interface"
@@ -131,10 +161,11 @@
       />
       <p>
         Access my app
-        <a href="https://react-music-app-sable.vercel.app/">here</a>! I really
-        enjoyed completing this assignment becase I had not previously used
-        React to build an interface with filtering and sorting. In addition, I
-        now have a stronger understanding of components and states in React.
+        <a href="https://react-music-app-sable.vercel.app/">here</a>! This
+        project was my first time using React to build an interface with
+        filtering and sorting, and I now feel like I have a stronger
+        understanding of components and states in React. I'm excited to use
+        React again in future projects!
       </p>
     </div>
   </main>
